@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MainController">
+   <children>
+      <TextField fx:id="hostIpTextField" layoutX="47.0" layoutY="24.0" promptText="Host und IP" />
+      <TextField fx:id="usernameTextField" layoutX="47.0" layoutY="72.0" promptText="Username" />
+      <TextField fx:id="passwordTextField" layoutX="47.0" layoutY="122.0" promptText="User PW" />
+      <TextField fx:id="taskNameTextField" layoutX="47.0" layoutY="259.0" prefHeight="28.0" prefWidth="517.0" promptText="Taskname" />
+      <Button fx:id="chooseCertButton" layoutX="300.0" layoutY="24.0" mnemonicParsing="false" onAction="#chooseCertificate" prefHeight="28.0" prefWidth="126.0" text="Zertifikat wählen" />
+      <Label fx:id="certLabel" layoutX="300.0" layoutY="77.0" prefHeight="18.0" prefWidth="277.0" text="Zert" />
+      <DatePicker fx:id="dateDatePicker" layoutX="47.0" layoutY="294.0" />
+      <ChoiceBox fx:id="timeChoiceBox" layoutX="414.0" layoutY="388.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="timeStrategyChoiceBox" layoutX="414.0" layoutY="302.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="forWhomChoiceBox" layoutX="414.0" layoutY="344.0" prefWidth="150.0" />
+      <Button fx:id="sendButton" layoutX="47.0" layoutY="429.0" mnemonicParsing="false" onAction="#send" prefHeight="28.0" prefWidth="517.0" text="Senden" />
+   </children>
+</AnchorPane>
